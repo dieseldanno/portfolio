@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="header__resume btn" href="#">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a class="mobile-nav-btn btn" href="#">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/profilepic.png" alt="Profile pic" />
+        <h2 class="hero__subtitle">Hi, I'm Danno 👋</h2>
+        <h1 class="hero__title">
+          FRONTEND DEVELOPER <br />
+          STUDENT
+        </h1>
+        <p class="hero__description">
+          An aspiring <strong>Frontend Developer</strong> with a passion for
+          creative problem-solving and innovative solutions. Excited about
+          <strong>UX design</strong>, I'm eager to jump into the great world of
+          programming and user-centric experiences.
+        </p>
+        <a
+          class="hero__btn btn"
+          href="mailto:danno.tharmarajah@gmail.com"
+          target="_blank"
+          >Reach out</a
+        >
+      </section>
+      <section class="about container section" id="about">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Hi! I'm Danno Tharmarajah, a
+            <strong>Frontend Developer</strong> student in Stockholm. I'm
+            currently studying at Nackademin for higher vocational studies.
+            Besides being a student, I'm also a DJ who loves electronic music.
+          </p>
+          <p class="about__description">
+            I chose programming because I love solving problems. I'm not one to
+            give up easily - whether it's at work, school, or in daily life, I
+            always look for solutions. Even when things get tough, I stick with
+            it and keep working hard.
+          </p>
+          <p class="about__description">
+            I've taken courses in HTML, CSS, and basic JavaScript so far.
+            Additionally, I've explored UX/UI design and feel comfortable using
+            Figma.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Skills</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">JavaScript</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">SASS</li>
+              <li class="about__list">Figma</li>
+              <li class="about__list">Git</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img"
+            src="/profilepic2.png"
+            alt="Profile picture"
+          />
+        </div>
+      </section>
+      <section class="work container section" id="projects">
+        <h2 class="work__title">Projects</h2>
+        <p class="work__description">Here you can view my latest projects</p>
+        <div class="work__container">
+          <!-- Project 1 -->
+          <h3 class="work__project-title">The L Word Quiz</h3>
+          <div class="work__img-wrapper work__image1">
+            <img src="/project1.png" alt="the l word quiz" />
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">The L Word Quiz</h3>
+            <p class="work__project-description1">School project</p>
+            <p class="work__project-description2">
+              The assignment was to create a quiz featuring various question
+              formats, including true/false, multiple-choice, and checkbox
+              answers. (HTML, CSS, JavaScript)
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://dieseldanno.github.io/Ankademin-Quiz/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- Project 2 -->
+          <h3 class="work__project-title">Figma prototype</h3>
+          <div class="work__img-wrapper work__image2">
+            <img src="/project2.png" alt="figma prototype" />
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Figma prototype</h3>
+            <p class="work__project-description1">School project</p>
+            <p class="work__project-description2">
+              The assignment was to create a working prototype for a project
+              using Figma.
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://github.com/dieseldanno/danno-tharmarajah-grafik-fend23"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- Project 3 -->
+          <h3 class="work__project-title">The Mist</h3>
+          <div class="work__img-wrapper work__image3">
+            <img src="/project3.png" alt="the mist" />
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">The Mist</h3>
+            <p class="work__project-description1">School project</p>
+            <p class="work__project-description2">
+              The assignment was to create a website for a made-up company. My
+              classmate and I decided to focus on a Nordic perfume website.
+              (HTML, CSS, SASS)
+            </p>
+            <a
+              class="btn work__project-btn"
+              href="https://dieseldanno.github.io/test-projekt/"
+              target="_blank"
+              >Website</a
+            >
+          </div>
+          <!-- Project 4 -->
+          <h3 class="work__project-title">Work in progress</h3>
+          <div class="work__img-wrapper work__image4">
+            <img src="/project4.png" alt="nothing here yet" />
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">Work in progress</h3>
+            <p class="work__project-description1">School project</p>
+            <p class="work__project-description2">
+              The assignment was to create an app while working in an agile
+              environment. (HTML, CSS, JavaScript)
+            </p>
+            <a class="btn work__project-btn" href="#">Website</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact container section" id="contact">
+        <h2 class="contact__title">Get in contact</h2>
+        <p class="contact__description">
+          If you enjoyed what you saw, feel free to shoot me an email!
+        </p>
+        <a
+          class="contact__btn btn"
+          href="mailto:danno.tharmarajah@gmail.com"
+          target="_blank"
+          >Reach out</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <div class="footer__socials">
+        <a
+          href="https://github.com/dieseldanno"
+          class="fa fa-github footer__socials-link"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/danno-tharmarajah-2353566b/"
+          class="fa fa-linkedin footer__socials-link"
+          target="_blank"
+        ></a>
+      </div>
+      <h3 class="footer__title">~ © 2024 Danno Tharmarajah ~</h3>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
