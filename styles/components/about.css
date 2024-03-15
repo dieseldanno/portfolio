@@ -126,6 +126,7 @@
 @media (min-width: 1280px) {
   .about__content {
     gap: 2rem;
+    margin-left: 2rem;
   }
 
   .about__title {
